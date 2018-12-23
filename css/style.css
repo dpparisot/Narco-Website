@@ -92,6 +92,11 @@ img.logo {
 .card-content {
     padding: .5em;
 }
+
+#section-b .card-content {
+    height: 20em;
+}
+
 #leftAlignList {
     text-align: left;
 }
