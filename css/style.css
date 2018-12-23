@@ -76,13 +76,13 @@ img.logo {
 
 /* section B */
 #section-b {
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 #section-b ul {
     list-style: none;
     margin: 0;
-    padding: 0 0 1em;
+
 }
 #section-b li {
     margin-bottom: 1em;
@@ -207,6 +207,7 @@ h4 {
     .box, #main-footer div {
         grid-column: span 2;
     }
+    
     #section-b ul , #section-d ul{
         display: flex;
         justify-content: space-around;
@@ -217,6 +218,10 @@ h4 {
 
     #section-d li {
         width: 50%
+    }
+
+    #section-b ul {
+        padding: 0 0 1em;
     }
 
     img.logo {
