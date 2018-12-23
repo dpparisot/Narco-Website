@@ -82,6 +82,7 @@ img.logo {
 #section-b ul {
     list-style: none;
     margin: 0;
+    padding: 0;
 
 }
 #section-b li {
@@ -90,6 +91,8 @@ img.logo {
     color: #333;
     display: flex;
     flex-direction: column;
+    padding: 0 .5em 0 .5em;
+    
 }
 #section-b .card{
     flex: 10;
@@ -207,7 +210,7 @@ h4 {
     .box, #main-footer div {
         grid-column: span 2;
     }
-    
+
     #section-b ul , #section-d ul{
         display: flex;
         justify-content: space-around;
