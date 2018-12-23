@@ -91,7 +91,6 @@ img.logo {
     color: #333;
     display: flex;
     flex-direction: column;
-    padding: 0 .5em 0 .5em;
     
 }
 #section-b .card{
@@ -100,6 +99,7 @@ img.logo {
 
 #section-b .card-content {
     padding: .5em;
+    padding: 0 .5em 0 .5em;
 }
 
 /* section C */
