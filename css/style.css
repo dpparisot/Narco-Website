@@ -29,6 +29,7 @@ p {
     padding: 1em 2em;
     border: 1px solid #666;
     margin: .5em 0;
+    height: 2em;
 }
 .btn:hover{
     background: #acacac;
@@ -87,9 +88,14 @@ img.logo {
     margin-bottom: 1em;
     background: #fff;
     color: #333;
+    display: flex;
+    flex-direction: column;
+}
+#section-b .card{
+    flex: 10;
 }
 
-.card-content {
+#section-b .card-content {
     padding: .5em;
 }
 
@@ -213,7 +219,7 @@ h4 {
     #section-b li {
         width: 31%;
     }
-    
+
     #section-d li {
         width: 50%
     }
