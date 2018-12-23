@@ -26,10 +26,10 @@ p {
     background: #333;
     color: #fff;
     text-decoration: none;
-    padding: 1em 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
     border: 1px solid #666;
     margin: .5em 0;
-    height: 2em;
 }
 .btn:hover{
     background: #acacac;
@@ -76,13 +76,13 @@ img.logo {
 
 /* section B */
 #section-b {
-    padding: 2em 1em 1em;
+    padding-top: 2em;
 }
 
 #section-b ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 1em;
 }
 #section-b li {
     margin-bottom: 1em;
@@ -97,10 +97,6 @@ img.logo {
 
 #section-b .card-content {
     padding: .5em;
-}
-
-#leftAlignList {
-    text-align: left;
 }
 
 /* section C */
@@ -186,7 +182,6 @@ a:hover#contactEmail, a:visited#contactEmail {
     background: #fff;
     color: #333;
     vertical-align: text-top;
-    border: solid red;
 }
 h4 {
     margin: 0;
