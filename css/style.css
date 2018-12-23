@@ -31,7 +31,7 @@ p {
     margin: .5em 0;
 }
 .btn:hover{
-    background: #eaeaea;
+    background: #acacac;
     color: #333;
 }
 
@@ -93,10 +93,6 @@ img.logo {
     padding: .5em;
 }
 
-#section-b .card-content {
-    height: 20em;
-}
-
 #leftAlignList {
     text-align: left;
 }
@@ -128,7 +124,7 @@ a:link#contactEmail {
 }
 
 a:hover#contactEmail, a:visited#contactEmail {
-    color: rgb(207, 207, 207);
+    color: #acacac;
 }
 
 /* footer */
