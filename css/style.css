@@ -101,6 +101,44 @@ img.logo {
     padding: .5em;
     padding: 0 .5em 0 .5em;
 }
+/* CSS for Sub pages*/
+/* section A */
+#section-a-sub {
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 1em;
+}
+
+/* section B */
+#section-b-sub {
+    padding-top: 1em;
+}
+
+#section-b-sub ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+#section-b-sub li {
+    margin-bottom: 1em;
+    background: #fff;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    
+}
+#section-b-sub .card{
+    flex: 10;
+}
+
+#section-b-sub .card-content {
+    padding: .5em;
+    padding: 0 .5em 0 .5em;
+}
+
+
+
 
 /* section C */
 #section-c {
@@ -204,21 +242,24 @@ h4 {
         padding-top: 0;
     }
 
-    .content-wrap, #section-b ul, #section-d ul {
+    .content-wrap, #section-b ul, #section-b-sub ul, #section-d ul {
         grid-column: 2/4;
     }
     .box, #main-footer div {
         grid-column: span 2;
     }
 
-    #section-b ul , #section-d ul{
+    #section-b-sub ul, #section-b ul , #section-d ul{
         display: flex;
         justify-content: space-around;
     }
     #section-b li {
         width: 31%;
     }
-
+    /* CSS for sub pages*/
+    #section-b-sub li {
+        width: 80%;
+    }
     #section-d li {
         width: 50%
     }
