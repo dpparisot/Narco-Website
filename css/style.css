@@ -24,14 +24,15 @@ p {
   padding: 1em 0;
 }
 .btn {
-  display: inline-block;
+  /*display: inline-block;*/
   background: #333;
   color: #fff;
   text-decoration: none;
   padding-top: 1em;
   padding-bottom: 1em;
   border: 1px solid #666;
-  margin: 0.5em 0;
+  margin: 2em;
+  width: calc(100% - 4em);
 }
 .btn:hover {
   background: #acacac;
@@ -93,9 +94,11 @@ img.logo {
   color: #333;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 #section-b .card {
   flex: 10;
+  width: 100%;
 }
 
 #section-b .card-content {
