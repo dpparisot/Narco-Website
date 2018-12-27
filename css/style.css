@@ -1,4 +1,5 @@
 /* Core Styles */
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -8,20 +9,23 @@ body {
   line-height: 1.5;
   text-align: center;
 }
+
 img {
   display: block;
   width: 100%;
   height: auto;
 }
-h1,
-h2 {
+
+h1, h2 {
   margin: 0;
   padding: 1em 0;
 }
+
 p {
   margin: 0;
   /*padding: 1em 0;*/
 }
+
 .btn {
   /*display: inline-block;*/
   background: #333;
@@ -33,22 +37,26 @@ p {
   margin: 1em;
   width: calc(100% - 2em);
 }
+
 .btn:hover {
   background: #acacac;
   color: #333;
 }
 
 /* Header Showcase */
+
 #showcase {
   min-height: 450px;
   color: #fff;
   text-align: center;
 }
+
 #showcase-sub {
   min-height: 225px;
   color: #fff;
   text-align: center;
 }
+
 img.logo {
   width: 50%;
   padding-left: 1em;
@@ -66,6 +74,7 @@ img.logo {
   z-index: -1;
   opacity: 0.8;
 }
+
 #showcase-sub .bg-image {
   position: absolute;
   background: #333 url("../img/header-image-compressor.png");
@@ -82,12 +91,13 @@ img.logo {
   padding-top: 100px;
   padding-bottom: 0;
 }
-#showcase .content-wrap,
-#section-a .content-wrap {
+
+#showcase .content-wrap, #section-a .content-wrap {
   padding: 0 1.5em;
 }
 
 /* section A */
+
 #section-a {
   background: #eaeaea;
   color: #333;
@@ -95,6 +105,7 @@ img.logo {
 }
 
 /* section B */
+
 #section-b {
   padding-top: 1em;
 }
@@ -104,6 +115,7 @@ img.logo {
   margin: 0;
   padding: 0;
 }
+
 #section-b li {
   margin-bottom: 1em;
   background: #fff;
@@ -112,6 +124,7 @@ img.logo {
   flex-direction: column;
   align-items: center;
 }
+
 #section-b .card {
   flex: 10;
   width: 100%;
@@ -121,8 +134,11 @@ img.logo {
   padding: 0.5em;
   padding: 0 0.5em 0 0.5em;
 }
+
 /* CSS for Sub pages*/
+
 /* section A */
+
 #section-a-sub {
   background: #eaeaea;
   color: #333;
@@ -130,6 +146,7 @@ img.logo {
 }
 
 /*section B */
+
 #section-b-sub {
   padding-top: 1em;
 }
@@ -139,6 +156,7 @@ img.logo {
   margin: 0;
   padding: 0;
 }
+
 #section-b-sub li {
   margin-bottom: 1em;
   background: #fff;
@@ -146,6 +164,7 @@ img.logo {
   display: flex;
   flex-direction: column;
 }
+
 #section-b-sub .card {
   flex: 10;
 }
@@ -154,10 +173,12 @@ img.logo {
   padding: 0.5em;
   padding: 0 0.5em 0 0.5em;
 }
+
 .attachedDocContainer {
   text-align: right;
   width: 100%;
 }
+
 .attachedDoc {
   padding: 1em 1em 1em 1em;
   float: right;
@@ -165,16 +186,19 @@ img.logo {
 }
 
 /* section C */
+
 #section-c {
   background: #fff;
   color: #333;
   padding: 2em;
 }
+
 #section-c ul:nth-child(2) {
   text-align: left;
 }
 
 /* section D */
+
 #section-d .box {
   padding: 1em;
   color: #fff;
@@ -184,21 +208,23 @@ img.logo {
   background: #2690d4;
   text-align: left;
 }
+
 a:link#contactEmail {
   color: #fff;
 }
 
-a:hover#contactEmail,
-a:visited#contactEmail {
+a:hover#contactEmail, a:visited#contactEmail {
   color: #acacac;
 }
 
 /* footer */
+
 #main-footer {
   padding: 1em;
   background: #000000;
   color: #fff;
 }
+
 #main-footer div {
   text-align: center;
   align-content: center;
@@ -214,6 +240,7 @@ a:visited#contactEmail {
   width: 100%;
   max-width: 250px;
 }
+
 .footer-card {
   padding: 0em;
   align-content: center;
@@ -227,6 +254,7 @@ a:visited#contactEmail {
 }
 
 /* section D */
+
 #section-d {
   color: #2690d4;
 }
@@ -236,6 +264,7 @@ a:visited#contactEmail {
   margin: 0;
   padding: 0 0 0 0;
 }
+
 #section-d li:nth-child(2) {
   padding: 1em;
 }
@@ -246,11 +275,13 @@ a:visited#contactEmail {
   color: #333;
   vertical-align: text-top;
 }
+
 h4 {
   margin: 0;
 }
 
 /* Media Queries */
+
 @media (min-width: 700px) {
   .grid {
     display: grid;
@@ -263,21 +294,13 @@ h4 {
   #section-a .content-text p {
     padding-top: 0;
   }
-
-  .content-wrap,
-  #section-b ul,
-  #section-b-sub ul,
-  #section-d ul {
+  .content-wrap, #section-b ul, #section-b-sub ul, #section-d ul {
     grid-column: 2/4;
   }
-  .box,
-  #main-footer div {
+  .box, #main-footer div {
     grid-column: span 2;
   }
-
-  #section-b-sub ul,
-  #section-b ul,
-  #section-d ul {
+  #section-b-sub ul, #section-b ul, #section-d ul {
     display: flex;
     justify-content: space-around;
   }
@@ -291,11 +314,9 @@ h4 {
   #section-d li {
     width: 50%;
   }
-
   #section-b ul {
     padding: 0 0 1em;
   }
-
   /*img.logo {
       width: 50%;
     max-width: 400px;
