@@ -122,7 +122,6 @@ img.logo {
   color: #333;
   display: flex;
   flex-direction: column;
-
 }
 
 #section-b .card {
@@ -236,7 +235,16 @@ a:hover#contactEmail, a:visited#contactEmail {
   text-decoration: none;
 }
 
-#main-footer img {
+#footer-img {
+  margin: auto;
+}
+
+.parisotdev {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.main-footer img {
   width: 100%;
   max-width: 250px;
 }
@@ -251,6 +259,7 @@ a:hover#contactEmail, a:visited#contactEmail {
 .footer-card-content {
   text-align: left;
   display: inline-block;
+  padding: 1em;
 }
 
 /* section D */
@@ -261,16 +270,15 @@ a:hover#contactEmail, a:visited#contactEmail {
 
 #section-d ul {
   list-style: none;
-  margin: 0;
-  padding: 0 0 0 0;
+  padding: 0;
 }
 
 #section-d li:nth-child(2) {
-  padding: 1em;
+  padding: 0;
 }
 
 #section-d li {
-  margin-bottom: 1em;
+  /*margin-bottom: 1em;*/
   background: #fff;
   color: #333;
   vertical-align: text-top;
@@ -316,6 +324,9 @@ h4 {
   }
   #section-b ul {
     padding: 0 0 1em;
+  }
+  .parisotdev {
+    padding-bottom: 1em;
   }
   /*img.logo {
       width: 50%;
