@@ -122,11 +122,11 @@ img.logo {
   color: #333;
   display: flex;
   flex-direction: column;
-  align-items: center;
+
 }
 
 #section-b .card {
-  flex: 10;
+  flex: 1 0 auto;
   width: 100%;
 }
 
