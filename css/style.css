@@ -1,3 +1,91 @@
+/*navigation styling*/
+
+.nav-main {
+  height: 3.5em;
+  width: 100%;
+  background-color: #222;
+  color: #fff;
+  position: fixed;
+}
+
+.nav-main .imglogo {
+  height: 1.5em;
+  padding: .5em .8em;
+  font-size: 1.4em;
+  line-height: 3.5em;
+  float: left;
+  width: auto;
+}
+
+.nav-main>ul {
+  margin: 0;
+  padding: 0;
+  float: left;
+  list-style: none;
+}
+
+.nav-main>ul>li {
+  float: left;
+}
+
+.nav-item {
+  height: 2.5em;
+  line-height: 2.5em;
+  display: inline-block;
+  padding: .5em .9em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  background-color: #444;
+}
+
+.nav-item:focus {
+  background-color: #444;
+}
+
+.nav-item:focus~.nav-content {
+  max-height: 100%;
+  -webkit-transition: max-height 400ms ease-in;
+  -moz-transition: max-height 400ms ease-in;
+  transition: max-height 400ms ease-in;
+}
+
+.nav-content {
+  top: 3.5em;
+  position: absolute;
+  overflow: hidden;
+  text-align: left;
+  background-color: #444;
+  max-height: 0;
+  position: fixed;
+}
+
+.nav-content a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-content a:hover {
+  text-decoration: underline;
+}
+
+.nav-sub {
+  padding: 1em;
+}
+
+.nav-sub ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.nav-sub ul li a {
+  display: inline-block;
+  padding: .25em 0
+}
+
 /* Core Styles */
 
 body {
@@ -16,7 +104,12 @@ img {
   height: auto;
 }
 
-h1, h2 {
+h1 {
+  display: none;
+  visibility: hidden;
+}
+
+h2 {
   margin: 0;
   padding: 1em 0;
 }
@@ -28,7 +121,7 @@ p {
 
 .btn {
   /*display: inline-block;*/
-  background: #333;
+  background: #444;
   color: #fff;
   text-decoration: none;
   padding-top: 1em;
@@ -57,11 +150,11 @@ p {
   text-align: center;
 }
 
-img.logo {
+/*.header-logo {
   width: 50%;
   padding-left: 1em;
   padding-top: 2em;
-}
+}*/
 
 #showcase .bg-image {
   position: absolute;
@@ -291,6 +384,23 @@ h4 {
 /* Media Queries */
 
 @media (min-width: 700px) {
+  .nav-main {
+    height: 5.6em;
+  }
+  .nav-main .imglogo {
+    height: 3em;
+    padding: .5em 1em;
+    font-size: 1.4em;
+    line-height: 4em;
+  }
+  .nav-item {
+    height: 3.6em;
+    line-height: 3.6em;
+    padding: 1em 2em;
+  }
+  .nav-content {
+    top: 5.5em;
+  }
   .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
