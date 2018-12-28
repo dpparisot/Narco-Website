@@ -17,7 +17,20 @@
   width: auto;
 }
 
+.nav-main button {
+  background: none;
+  color: inherit;
+  border: none;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+  padding: 1em;
+  font-size: 1em;
+  margin: 0;
+}
+
 .nav-main>ul{
+  
   margin: 0;
   padding: 0;
   float: left;
@@ -37,15 +50,15 @@
   text-decoration: none;
 }
 
-.nav-item:hover {
+.nav-item:hover , .nav-main button:hover{
   background-color: #444;
 }
 
-.nav-item:focus {
+.nav-item:focus, .nav-main button:focus {
   background-color: #444;
 }
 
-.nav-item:focus~.nav-content {
+.nav-main button:focus~.nav-content {
   max-height: 100%;
   -webkit-transition: max-height 400ms ease-in;
   -moz-transition: max-height 400ms ease-in;
@@ -204,19 +217,19 @@ p {
 
 /* section B */
 
-#section-b {
+#section-b, #section-b-sub {
   padding-top: 1em;
   background-color: #222;
   margin: auto;
 }
 
-#section-b ul {
+#section-b ul, #section-b-sub ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-#section-b li {
+#section-b li, #section-b-sub li {
   margin-bottom: 1em;
   background: #fff;
   color: #333;
@@ -227,13 +240,12 @@ p {
   margin-bottom: 0;
 }
 
-#section-b .card {
+#section-b .card, #section-b-sub .card{
   flex: 1 0 auto;
   width: 100%;
 }
 
-#section-b .card-content {
-  padding: 0.5em;
+#section-b .card-content, #section-b-sub .card-content {
   padding: 0 0.5em 0 0.5em;
 }
 
@@ -248,34 +260,6 @@ p {
 }
 
 /*section B */
-
-#section-b-sub {
-  padding-top: 1em;
-  margin: auto;
-}
-
-#section-b-sub ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-#section-b-sub li {
-  margin-bottom: 1em;
-  background: #fff;
-  color: #333;
-  display: flex;
-  flex-direction: column;
-}
-
-#section-b-sub .card {
-  flex: 10;
-}
-
-#section-b-sub .card-content {
-  padding: 0.5em;
-  padding: 0 0.5em 0 0.5em;
-}
 
 .attachedDocContainer {
   text-align: right;
@@ -419,7 +403,11 @@ h4 {
     padding: 1em 2em;
   }
   .nav-content {
-    top: 5.5em;
+    top: 5.6em;
+  }
+  .nav-main button {
+    padding: 2.05em;
+
   }
   
   .grid {
@@ -441,7 +429,7 @@ h4 {
     grid-column: 2/4;
   }
 
-  #section-b-sub ul, #section-b ul, #section-d ul {
+  #section-b ul, #section-d ul {
     display: flex;
     justify-content: space-around;
   }
@@ -452,6 +440,7 @@ h4 {
   /* CSS for sub pages*/
   #section-b-sub li {
     width: 100%;
+    margin-bottom: 0;
   }
   #section-d li {
     width: 50%;
