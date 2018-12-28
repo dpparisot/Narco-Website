@@ -17,7 +17,7 @@
   width: auto;
 }
 
-.nav-main>ul {
+.nav-main>ul{
   margin: 0;
   padding: 0;
   float: left;
@@ -51,6 +51,9 @@
   -moz-transition: max-height 400ms ease-in;
   transition: max-height 400ms ease-in;
 }
+.nav-content:hover, .nav-content:focus {
+  max-height: 100%;
+}
 
 .nav-content {
   top: 3.5em;
@@ -80,7 +83,6 @@
   margin: 0;
   list-style-type: none;
 }
-
 .nav-sub ul li a {
   display: inline-block;
   padding: .25em 0
@@ -145,7 +147,7 @@ p {
 }
 
 #showcase-sub {
-  min-height: 225px;
+  min-height: 275px;
   color: #fff;
   text-align: center;
 }
@@ -171,13 +173,15 @@ p {
 
 #showcase-sub .bg-image {
   position: absolute;
+  top: 3.5em;
   background: #333 url("../img/header-image-compressor.png");
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
-  height: 225px;
+  height: 275px;
   z-index: -1;
   opacity: 0.8;
+  background-size: 1200px;
 }
 
 #showcase h1 {
@@ -247,6 +251,7 @@ p {
 
 #section-b-sub {
   padding-top: 1em;
+  margin: auto;
 }
 
 #section-b-sub ul {
@@ -275,12 +280,13 @@ p {
 .attachedDocContainer {
   text-align: right;
   width: 100%;
+  line-height: 0;
 }
 
 .attachedDoc {
   padding: 1em 1em 1em 1em;
-  float: right;
-  width: 200px;
+  margin-left: auto;
+  margin-right: 0;
 }
 
 /* section C */
@@ -445,7 +451,7 @@ h4 {
   }
   /* CSS for sub pages*/
   #section-b-sub li {
-    width: 80%;
+    width: 100%;
   }
   #section-d li {
     width: 50%;
