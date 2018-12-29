@@ -29,8 +29,7 @@
   margin: 0;
 }
 
-.nav-main>ul{
-  
+.nav-main>ul {
   margin: 0;
   padding: 0;
   float: left;
@@ -50,7 +49,7 @@
   text-decoration: none;
 }
 
-.nav-item:hover , .nav-main button:hover{
+.nav-item:hover, .nav-main button:hover {
   background-color: #444;
 }
 
@@ -64,6 +63,7 @@
   -moz-transition: max-height 400ms ease-in;
   transition: max-height 400ms ease-in;
 }
+
 .nav-content:hover, .nav-content:focus {
   max-height: 100%;
 }
@@ -96,6 +96,7 @@
   margin: 0;
   list-style-type: none;
 }
+
 .nav-sub ul li a {
   display: inline-block;
   padding: .25em 0
@@ -236,11 +237,12 @@ p {
   display: flex;
   flex-direction: column;
 }
+
 #section-b ul:nth-child(2) li:nth-child(3) {
   margin-bottom: 0;
 }
 
-#section-b .card, #section-b-sub .card{
+#section-b .card, #section-b-sub .card {
   flex: 1 0 auto;
   width: 100%;
 }
@@ -359,8 +361,8 @@ a:hover#contactEmail, a:visited#contactEmail {
   color: #2690d4;
   margin: auto;
   background-color: #222;
-  padding: 0 1em;
-  max-width: calc(1200px - 2em);
+  padding: 0;
+  max-width: 1200px;
   overflow: hidden;
 }
 
@@ -387,7 +389,6 @@ h4 {
 /* Media Queries */
 
 @media (min-width: 700px) {
-  
   .nav-main {
     height: 5.6em;
   }
@@ -407,9 +408,7 @@ h4 {
   }
   .nav-main button {
     padding: 2.05em;
-
   }
-  
   .grid {
     max-width: 1200px;
     display: grid;
@@ -428,22 +427,21 @@ h4 {
   .content-wrap, #section-b ul, #section-b-sub ul, #section-d ul {
     grid-column: 2/4;
   }
-
-  #section-b ul, #section-d ul {
+  #section-b ul, #section-d ul, #section-b-sub ul {
     display: flex;
     justify-content: space-around;
   }
   #section-b li {
-    width: 32%;
+    width: 31.8%;
     margin-bottom: 0;
   }
   /* CSS for sub pages*/
   #section-b-sub li {
-    width: 100%;
+    width: 98.5%;
     margin-bottom: 0;
   }
   #section-d li {
-    width: 50%;
+    width: 48.5%;
   }
   #section-b ul:first-child {
     padding: 0 0 1em;
@@ -454,7 +452,7 @@ h4 {
   .parisotdev {
     padding-bottom: 1em;
   }
- /* img.logo {
+  /* img.logo {
     width: 50%;
     max-width: 400px;
     padding-top: 2em;
