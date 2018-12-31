@@ -1,0 +1,22 @@
+{
+  "name": "narco-website",
+  "version": "1.0.0",
+  "description": "narco website",
+  "main": "narco_website.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpparisot/Narco-Website.git"
+  },
+  "author": "Daniel Parisot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dpparisot/Narco-Website/issues"
+  },
+  "homepage": "https://github.com/dpparisot/Narco-Website#readme",
+  "dependencies": {
+    "node-sass": "^4.11.0"
+  }
+}

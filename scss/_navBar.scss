@@ -1,0 +1,128 @@
+$nav-bar-primary-color: #222;
+$nav-bar-secondary-color: #444;
+$nav-bar-text-color: #fff;
+
+.nav-main {
+    height: 3.5em;
+    width: 100%;
+    background-color: $nav-bar-primary-color;
+    color: $nav-bar-text-color;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    .imglogo {
+        height: 1.5em;
+        padding: .5em .8em;
+        font-size: 1.4em;
+        line-height: 3.5em;
+        float: left;
+        width: auto;
+    }
+    button {
+        background: none;
+        color: inherit;
+        border: none;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit;
+        padding: 1em;
+        font-size: 1em;
+        margin: 0;
+        &:focus~.nav-content {
+            max-height: 100%;
+            -webkit-transition: max-height 400ms ease-in;
+            -moz-transition: max-height 400ms ease-in;
+            transition: max-height 400ms ease-in;
+        }
+        &:hover, &:focus {
+            background-color: $nav-bar-secondary-color;
+        }
+    }
+    >ul {
+        margin: 0;
+        padding: 0;
+        float: left;
+        list-style: none;
+        >li {
+            float: left;
+        }
+    }
+    .nav-item {
+        height: 2.5em;
+        line-height: 2.5em;
+        display: inline-block;
+        padding: .5em .9em;
+        color: $nav-bar-text-color;
+        text-decoration: none;
+        &:hover {
+            background-color: $nav-bar-secondary-color;
+        }
+        &:focus {
+            background-color: $nav-bar-secondary-color;
+        }
+
+    }
+
+    .nav-content {
+        top: 3.5em;
+        position: absolute;
+        overflow: hidden;
+        text-align: left;
+        background-color: $nav-bar-secondary-color;
+        max-height: 0;
+        position: fixed;
+
+        &:hover, &:focus {
+            max-height: 100%;
+        }
+        
+        a {
+            color: $nav-bar-text-color;
+            text-decoration: none;
+            
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .nav-sub {
+            padding: 1em;
+
+            ul {
+                padding: 0;
+                margin: 0;
+                list-style-type: none;
+                li a{
+                    display: inline-block;
+                    padding: .25em 0;
+                }
+            }
+        }
+    }
+
+}
+@media (min-width: 700px) {
+    .nav-main {
+        height: 5.6em;
+        .imglogo {
+            height: 3em;
+            padding: .5em 1em;
+            font-size: 1.4em;
+            line-height: 4em;
+        }
+        .nav-item {
+            height: 3.6em;
+            line-height: 3.6em;
+            padding: 1em 2em;
+
+        }
+        .nav-content {
+            top: 5.6em;
+        }
+        
+        button {
+            padding: 2.05em
+        }
+    }
+
+}
