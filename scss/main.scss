@@ -1,9 +1,13 @@
-$primary-color: #666;
+$primary-color: #222;
+$secondary-color: #fff;
+
+
 
 //navbar colors//
-$nav-bar-primary-color: #222;
-$nav-bar-secondary-color: #444;
-$nav-bar-text-color: #fff;
+$nav-bar-primary-color:$primary-color;
+$nav-bar-secondary-color: lighten($primary-color, 10%);
+$nav-bar-text-color: $secondary-color;
+
 
 
 @import "scss/navBar.scss";
@@ -11,8 +15,8 @@ $nav-bar-text-color: #fff;
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #333;
-    color: #fff;
+    background: lighten($primary-color, 10%);
+    color: $secondary-color;
     font-size: 1em;
     line-height: 1.5;
     text-align: center;
@@ -35,26 +39,26 @@ body {
 
     .btn {
     /*display: inline-block;*/
-    background: #444;
-    color: #fff;
+    background: lighten($primary-color, 10%);
+    color: $secondary-color;
     text-decoration: none;
     padding-top: 1em;
     padding-bottom: 1em;
-    border: 1px solid #666;
+    border: 1px solid lighten($primary-color, 10%);
     margin: 1em;
     width: calc(100% - 2em);}
 
     .btn:hover {
-    background: #acacac;
-    color: #333;}
+    background: darken($secondary-color , 40%);
+    color: $primary-color;}
     #showcase {
         min-height: 450px;
-        color: #fff;
+        color: $secondary-color;
         text-align: center;
         .bg-image {
             position: absolute;
             top: 3.5em;
-            background: #333 url("../img/header-image-compressor.png");
+            background: lighten($primary-color, 10%) url("../img/header-image-compressor.png");
             background-position: center;
             background-repeat: no-repeat;
             width: 100%;
@@ -70,12 +74,12 @@ body {
       
     #showcase-sub {
         min-height: 275px;
-        color: #fff;
+        color: $secondary-color;
         text-align: center;
         .bg-image {
             position: absolute;
             top: 3.5em;
-            background: #333 url("../img/header-image-compressor.png");
+            background: $primary-color url("../img/header-image-compressor.png");
             background-position: center;
             background-repeat: no-repeat;
             width: 100%;
@@ -86,15 +90,15 @@ body {
     
 //Section A//
     #section-a , #section-a-sub{
-        background: #eaeaea;
-        color: #333;
+        background: $secondary-color;
+        color: $primary-color;
         padding-bottom: 1em;
         margin: auto;}
 
 //Section B//        
     #section-b, #section-b-sub {
         padding-top: 1em;
-        background-color: #222;
+        background-color: $primary-color;
         margin: auto;
         
         ul {
@@ -103,11 +107,12 @@ body {
             margin: 0;
 
             li {
-                margin-bottom: 1em;
-                background: #fff;
-                color: #333;
+                //margin-bottom: 1em;//
+                background: $secondary-color;
+                color: $primary-color;
                 display: flex;
-                flex-direction: column;}
+                flex-direction: column;
+                margin-bottom: 1em;}
                 
             &:nth-child(3){
                 margin-bottom: 0;
@@ -135,8 +140,8 @@ body {
 
 //Section C//
         #section-c {
-            background: #fff;
-            color: #333;
+            background: $secondary-color;
+            color: $primary-color;
             padding: 2em;
 
         ul {
@@ -145,33 +150,128 @@ body {
             margin: 0;
         li {
             margin-bottom: 1em;
-            background: #fff;
-            color: #333;
+            background: $secondary-color;
+            color: $primary-color;
             display: flex;
             flex-direction: column;
         
         &:nth-child(2) {
             text-align: left;
-        }}}
+        }}}}
 
 //Section D//
         #section-d {
+            color: #2690d4;
+            margin: auto;
+            background-color: $primary-color;
+            padding: 0;
+            max-width: 1200px;
+            overflow: hidden;
 
             .box {
                 padding: 1em;
-                color: #fff;
+                color: $secondary-color;
                 
                 &:first-child {
                     background: #2690d4;
                     text-align: left;}}
         
             a {
+                color: $secondary-color;
+
                 &:link #contactEmail {
-                color: #fff}
+                color: $secondary-color}
             
                 &:hover #contactEmail, &:visited #contactEmail {
-                    color: #acacac;}}}
+                    color: darken($secondary-color, 20%);}}
+            ul {
+                list-style: none;
+                padding: 0;
+            }
+            li {
+                background: $secondary-color;
+                color: $primary-color;
+                vertical-align: text-top;
+
+                &:nth-child(2) {
+                    padding: 0;}}
+            h4 {
+                margin: 0;
+            }
+            .footer-card {
+                padding: 0em;
+                align-content: center;
+                background: #2690d4;
+                color: $secondary-color;
+                .footer-card-content {
+                    text-align: left;
+                    display: inline-block;
+                    padding: 1em;}}}
 
 //Main Footer//
+    #main-footer {
+        padding: 1em;
+        background: $primary-color;
+        color: $secondary-color;
+        margin: auto;
+        max-width: calc(1200px - 2em);
 
-}
+        div {
+            text-align: center;
+            align-content: center;
+            margin: auto;}
+        a {
+            color: #2690d4;
+            text-decoration: none;}
+        .footer-img {
+            margin: auto;
+            max-width: 250px;}
+        .parisotdev {
+            padding-top: 1em;
+            padding-bottom: 2em;}
+        }
+    @media (min-width: 700px) {
+        .grid {
+            max-width: 1200px;
+            display: grid;
+            grid-template-columns: 1fr repeat(2, minmax(auto, 40em)) 1fr;
+          }
+        #showcase .bg-image {
+            top: 5.5em;
+          }
+         #section-a {
+              .content-text {
+                columns: 2;
+                column-gap: 2em;}
+                p {
+                    padding-top: 0;}}
+          
+        .content-wrap, #section-b ul, #section-b-sub ul, #section-d ul {
+            grid-column: 2/4;
+          }
+          #section-b ul, #section-d ul, #section-b-sub ul {
+            display: flex;
+            justify-content: space-around;
+          }
+          #section-b li {
+            width: 31.8%;
+            margin-bottom: 0;
+          }
+          /* CSS for sub pages*/
+          #section-b-sub li {
+            width: 98.5%;
+            margin-bottom: 0;
+          }
+          #section-d li {
+            width: 48.5%;
+          }
+          #section-b ul:first-child {
+            padding: 0 0 1em;
+          }
+          #main-footer div {
+            grid-column: 2/4;
+          }
+          .parisotdev {
+            padding-bottom: 1em;
+          }
+    }
