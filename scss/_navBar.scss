@@ -14,8 +14,7 @@
         font-size: 1.4em;
         line-height: 3.5em;
         float: left;
-        width: auto;
-    }
+        width: auto;}
     button {
         background: none;
         color: inherit;
@@ -30,21 +29,16 @@
             max-height: 100%;
             -webkit-transition: max-height 400ms ease-in;
             -moz-transition: max-height 400ms ease-in;
-            transition: max-height 400ms ease-in;
-        }
+            transition: max-height 400ms ease-in;}
         &:hover, &:focus {
-            background-color: $nav-bar-secondary-color;
-        }
-    }
+            background-color: $nav-bar-secondary-color;}}
     >ul {
         margin: 0;
         padding: 0;
         float: left;
         list-style: none;
         >li {
-            float: left;
-        }
-    }
+            float: left;}}
     .nav-item {
         height: 2.5em;
         line-height: 2.5em;
@@ -53,13 +47,9 @@
         color: $nav-bar-text-color;
         text-decoration: none;
         &:hover {
-            background-color: $nav-bar-secondary-color;
-        }
+            background-color: $nav-bar-secondary-color;}
         &:focus {
-            background-color: $nav-bar-secondary-color;
-        }
-
-    }
+            background-color: $nav-bar-secondary-color;}}
 
     .nav-content {
         top: 3.5em;
@@ -71,17 +61,14 @@
         position: fixed;
 
         &:hover, &:focus {
-            max-height: 100%;
-        }
+            max-height: 100%;}
         
         a {
             color: $nav-bar-text-color;
             text-decoration: none;
             
             &:hover {
-                text-decoration: underline;
-            }
-        }
+                text-decoration: underline;}}
         .nav-sub {
             padding: 1em;
 
@@ -91,13 +78,7 @@
                 list-style-type: none;
                 li a{
                     display: inline-block;
-                    padding: .25em 0;
-                }
-            }
-        }
-    }
-
-}
+                    padding: .25em 0;}}}}}
 @media (min-width: 700px) {
     .nav-main {
         height: 5.6em;
@@ -105,21 +86,13 @@
             height: 3em;
             padding: .5em 1em;
             font-size: 1.4em;
-            line-height: 4em;
-        }
+            line-height: 4em;}
         .nav-item {
             height: 3.6em;
             line-height: 3.6em;
-            padding: 1em 2em;
-
-        }
+            padding: 1em 2em;}
         .nav-content {
-            top: 5.6em;
-        }
+            top: 5.6em;}
         
         button {
-            padding: 2.05em
-        }
-    }
-
-}
+            padding: 2.05em}}}
