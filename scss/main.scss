@@ -50,7 +50,7 @@ body {
     #showcase {
         min-height: 450px;
         color: #fff;
-        text-align: center;}
+        text-align: center;
         .bg-image {
             position: absolute;
             top: 3.5em;
@@ -62,9 +62,116 @@ body {
             z-index: -1;
             opacity: 0.8;
             background-size: 1200px;}
+        h1 {
+            padding-top: 100px;
+            padding-bottom: 0;}
+        .content-wrap, #section-a .content-wrap{
+            padding: 0 1.5em;}}
       
     #showcase-sub {
         min-height: 275px;
         color: #fff;
-        text-align: center;}
+        text-align: center;
+        .bg-image {
+            position: absolute;
+            top: 3.5em;
+            background: #333 url("../img/header-image-compressor.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 275px;
+            z-index: -1;
+            opacity: 0.8;
+            background-size: 1200px;}}
+    
+//Section A//
+    #section-a , #section-a-sub{
+        background: #eaeaea;
+        color: #333;
+        padding-bottom: 1em;
+        margin: auto;}
+
+//Section B//        
+    #section-b, #section-b-sub {
+        padding-top: 1em;
+        background-color: #222;
+        margin: auto;
+        
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li {
+                margin-bottom: 1em;
+                background: #fff;
+                color: #333;
+                display: flex;
+                flex-direction: column;}
+                
+            &:nth-child(3){
+                margin-bottom: 0;
+            }}
+            
+            &:nth-child(2) {
+                margin-bottom: 0;}}
+            
+        .card {
+            flex: 1 0 auto;
+            width: 100%}
+        
+        .card-content {
+            padding: 0 0.5em 0 0.5em;}
+        
+        .attachedDocContainer {
+            text-align: right;
+            width: 100%;
+            line-height: 0;}
+        
+        .attachedDoc {
+            padding: 1em 1em 1em 1em;
+            margin-left: auto;
+            margin-right: 0;}}
+
+//Section C//
+        #section-c {
+            background: #fff;
+            color: #333;
+            padding: 2em;
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        li {
+            margin-bottom: 1em;
+            background: #fff;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+        
+        &:nth-child(2) {
+            text-align: left;
+        }}}
+
+//Section D//
+        #section-d {
+
+            .box {
+                padding: 1em;
+                color: #fff;
+                
+                &:first-child {
+                    background: #2690d4;
+                    text-align: left;}}
+        
+            a {
+                &:link #contactEmail {
+                color: #fff}
+            
+                &:hover #contactEmail, &:visited #contactEmail {
+                    color: #acacac;}}}
+
+//Main Footer//
+
 }
