@@ -19,7 +19,7 @@ body {
     color: $secondary-color;
     font-size: 1em;
     line-height: 1.5;
-    text-align: center;
+    text-align: center;}
     
     #section-b img {
         display: block;
@@ -104,22 +104,19 @@ body {
         ul {
             list-style: none;
             padding: 0;
-            margin: 0;
+            margin: 0;}
 
-            li {
-                //margin-bottom: 1em;//
-                background: $secondary-color;
-                color: $primary-color;
-                display: flex;
-                flex-direction: column;
-                margin-bottom: 1em;}
-                
-            &:nth-child(3){
-                margin-bottom: 0;
-            }}
-            
-            &:nth-child(2) {
-                margin-bottom: 0;}}
+        li {
+            background: $secondary-color;
+            color: $primary-color;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1em;}
+        
+        ul:nth-child(2) {
+            margin-bottom: 0;
+            li:nth-child(3){
+                margin-bottom: 0;}}}
             
         .card {
             flex: 1 0 auto;
@@ -136,7 +133,7 @@ body {
         .attachedDoc {
             padding: 1em 1em 1em 1em;
             margin-left: auto;
-            margin-right: 0;}}
+            margin-right: 0;}
 
 //Section C//
         #section-c {
@@ -253,7 +250,7 @@ body {
             display: flex;
             justify-content: space-around;
           }
-          #section-b li {
+          #section-b ul li {
             width: 31.8%;
             margin-bottom: 0;
           }

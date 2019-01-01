@@ -98,102 +98,116 @@ body {
   font-size: 1em;
   line-height: 1.5;
   text-align: center; }
-  body #section-b img {
-    display: block;
+
+#section-b img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+h1 {
+  display: none;
+  visibility: hidden; }
+
+h2 {
+  margin: 0;
+  padding: 1em 0; }
+
+p {
+  margin: 0; }
+
+.btn {
+  /*display: inline-block;*/
+  background: #3c3c3c;
+  color: #fff;
+  text-decoration: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border: 1px solid #3c3c3c;
+  margin: 1em;
+  width: calc(100% - 2em); }
+
+.btn:hover {
+  background: #999999;
+  color: #222; }
+
+#showcase {
+  min-height: 450px;
+  color: #fff;
+  text-align: center; }
+  #showcase .bg-image {
+    position: absolute;
+    top: 3.5em;
+    background: #3c3c3c url("../img/header-image-compressor.png");
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    height: auto; }
-  body h1 {
-    display: none;
-    visibility: hidden; }
-  body h2 {
-    margin: 0;
-    padding: 1em 0; }
-  body p {
+    height: 450px;
+    z-index: -1;
+    opacity: 0.8;
+    background-size: 1200px; }
+  #showcase h1 {
+    padding-top: 100px;
+    padding-bottom: 0; }
+  #showcase .content-wrap, #showcase #section-a .content-wrap {
+    padding: 0 1.5em; }
+
+#showcase-sub {
+  min-height: 275px;
+  color: #fff;
+  text-align: center; }
+  #showcase-sub .bg-image {
+    position: absolute;
+    top: 3.5em;
+    background: #222 url("../img/header-image-compressor.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 275px;
+    z-index: -1;
+    opacity: 0.8;
+    background-size: 1200px; }
+
+#section-a, #section-a-sub {
+  background: #fff;
+  color: #222;
+  padding-bottom: 1em;
+  margin: auto; }
+
+#section-b, #section-b-sub {
+  padding-top: 1em;
+  background-color: #222;
+  margin: auto; }
+  #section-b ul, #section-b-sub ul {
+    list-style: none;
+    padding: 0;
     margin: 0; }
-  body .btn {
-    /*display: inline-block;*/
-    background: #3c3c3c;
-    color: #fff;
-    text-decoration: none;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    border: 1px solid #3c3c3c;
-    margin: 1em;
-    width: calc(100% - 2em); }
-  body .btn:hover {
-    background: #999999;
-    color: #222; }
-  body #showcase {
-    min-height: 450px;
-    color: #fff;
-    text-align: center; }
-    body #showcase .bg-image {
-      position: absolute;
-      top: 3.5em;
-      background: #3c3c3c url("../img/header-image-compressor.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 450px;
-      z-index: -1;
-      opacity: 0.8;
-      background-size: 1200px; }
-    body #showcase h1 {
-      padding-top: 100px;
-      padding-bottom: 0; }
-    body #showcase .content-wrap, body #showcase #section-a .content-wrap {
-      padding: 0 1.5em; }
-  body #showcase-sub {
-    min-height: 275px;
-    color: #fff;
-    text-align: center; }
-    body #showcase-sub .bg-image {
-      position: absolute;
-      top: 3.5em;
-      background: #222 url("../img/header-image-compressor.png");
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 100%;
-      height: 275px;
-      z-index: -1;
-      opacity: 0.8;
-      background-size: 1200px; }
-  body #section-a, body #section-a-sub {
+  #section-b li, #section-b-sub li {
     background: #fff;
     color: #222;
-    padding-bottom: 1em;
-    margin: auto; }
-  body #section-b, body #section-b-sub {
-    padding-top: 1em;
-    background-color: #222;
-    margin: auto; }
-    body #section-b ul, body #section-b-sub ul {
-      list-style: none;
-      padding: 0;
-      margin: 0; }
-      body #section-b ul li, body #section-b-sub ul li {
-        background: #fff;
-        color: #222;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 1em; }
-      body #section-b ul:nth-child(3), body #section-b-sub ul:nth-child(3) {
-        margin-bottom: 0; }
-    body #section-b:nth-child(2), body #section-b-sub:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em; }
+  #section-b ul:nth-child(2), #section-b-sub ul:nth-child(2) {
+    margin-bottom: 0; }
+    #section-b ul:nth-child(2) li:nth-child(3), #section-b-sub ul:nth-child(2) li:nth-child(3) {
       margin-bottom: 0; }
-  body .card {
-    flex: 1 0 auto;
-    width: 100%; }
-  body .card-content {
-    padding: 0 0.5em 0 0.5em; }
-  body .attachedDocContainer {
-    text-align: right;
-    width: 100%;
-    line-height: 0; }
-  body .attachedDoc {
-    padding: 1em 1em 1em 1em;
-    margin-left: auto;
-    margin-right: 0; }
+
+.card {
+  flex: 1 0 auto;
+  width: 100%; }
+
+.card-content {
+  padding: 0 0.5em 0 0.5em; }
+
+.attachedDocContainer {
+  text-align: right;
+  width: 100%;
+  line-height: 0; }
+
+.attachedDoc {
+  padding: 1em 1em 1em 1em;
+  margin-left: auto;
+  margin-right: 0; }
 
 #section-c {
   background: #fff;
@@ -289,7 +303,7 @@ body {
   #section-b ul, #section-d ul, #section-b-sub ul {
     display: flex;
     justify-content: space-around; }
-  #section-b li {
+  #section-b ul li {
     width: 31.8%;
     margin-bottom: 0; }
   /* CSS for sub pages*/
