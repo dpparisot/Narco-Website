@@ -90,6 +90,293 @@
     .nav-main button {
       padding: 2.05em; } }
 
+.box {
+  background: #222;
+  width: 450px;
+  height: 160px;
+  position: relative;
+  margin: auto; }
+
+.line {
+  background: white;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 1em;
+  height: 8em;
+  z-index: 10; }
+
+.top-line {
+  background: white;
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  width: 2em;
+  height: 1em;
+  z-index: 10; }
+
+.bottom-line {
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-name: parisotdev-bottom-line;
+  animation-direction: normal;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  background: white;
+  position: absolute;
+  top: 5em;
+  left: 1em;
+  width: 2em;
+  height: 1em;
+  z-index: 10; }
+
+.inner-circle {
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-name: parisotdev-inner-circle;
+  animation-direction: normal;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  background: #222;
+  position: absolute;
+  top: 2em;
+  left: 3em;
+  width: 1.5em;
+  height: 3em;
+  border-top-right-radius: 3em;
+  border-bottom-right-radius: 3em;
+  z-index: 11; }
+
+.outer-circle {
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-name: parisotdev-outer-circle;
+  animation-direction: normal;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  background: white;
+  position: absolute;
+  top: 1em;
+  left: 3em;
+  width: 2.5em;
+  height: 5em;
+  border-top-right-radius: 4em;
+  border-bottom-right-radius: 4em;
+  z-index: 10; }
+
+.line2 {
+  background: white;
+  position: absolute;
+  top: 1em;
+  left: 16.5em;
+  width: 1em;
+  height: 8em;
+  z-index: 10; }
+
+.top-line2 {
+  background: white;
+  position: absolute;
+  top: 1em;
+  left: 16.5em;
+  width: 2em;
+  height: 1em;
+  z-index: 10; }
+
+.bottom-line2 {
+  background: white;
+  position: absolute;
+  top: 8em;
+  left: 16.5em;
+  width: 2em;
+  height: 1em;
+  z-index: 10; }
+
+.inner-circle2 {
+  background: #222;
+  position: absolute;
+  top: 2em;
+  left: 18.5em;
+  width: 3em;
+  height: 6em;
+  border-top-right-radius: 3em;
+  border-bottom-right-radius: 3em;
+  z-index: 11; }
+
+.outer-circle2 {
+  animation-fill-mode: forwards;
+  background: white;
+  position: absolute;
+  top: 1em;
+  left: 18.5em;
+  width: 4em;
+  height: 8em;
+  border-top-right-radius: 4em;
+  border-bottom-right-radius: 4em;
+  z-index: 10; }
+
+.arisot {
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-name: parisotdev-arisot;
+  animation-direction: normal;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  color: white;
+  position: absolute;
+  top: 1.15em;
+  left: .7em;
+  font-size: 4em;
+  font-family: "Arial Black", Gadget, sans-serif;
+  z-index: 1; }
+
+.ev {
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-name: parisotdev-ev;
+  animation-direction: normal;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  color: white;
+  position: absolute;
+  top: 1.15em;
+  left: 1.6em;
+  font-size: 4em;
+  font-family: "Arial Black", Gadget, sans-serif;
+  z-index: -1; }
+
+.eraser1 {
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-name: parisotdev-eraser1;
+  animation-direction: normal;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  background: #222;
+  position: absolute;
+  top: 5em;
+  left: 2.5em;
+  width: 0;
+  height: 5em;
+  z-index: 9; }
+
+.eraser2 {
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+  animation-name: parisotdev-eraser1;
+  animation-direction: normal;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  background: #222;
+  position: absolute;
+  top: 0em;
+  left: 16em;
+  width: 12em;
+  height: 10em;
+  z-index: 15; }
+
+@keyframes parisotdev-eraser1 {
+  0% {
+    opacity: 1; }
+  60% {
+    opacity: 1; }
+  70% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes parisotdev-arisot {
+  0% {
+    opacity: 1;
+    z-index: 1; }
+  15% {
+    opacity: 0;
+    z-index: 1; }
+  16% {
+    z-index: -1; }
+  30% {
+    opacity: 0;
+    z-index: 1; }
+  45% {
+    opacity: 0;
+    z-index: 1; }
+  46% {
+    z-index: 1; }
+  60% {
+    opacity: 1;
+    z-index: 1; } }
+
+@keyframes parisotdev-ev {
+  0% {
+    left: 1.6em;
+    opacity: 0;
+    z-index: -1; }
+  15% {
+    left: 1.6em;
+    opacity: 0;
+    z-index: 1; }
+  30% {
+    left: 1.6em;
+    opacity: 1;
+    z-index: 1; }
+  45% {
+    left: 1.6em;
+    opacity: 0;
+    z-index: 1; }
+  46% {
+    left: 1.6em;
+    opacity: 0;
+    z-index: -1; }
+  60% {
+    left: 5.5em;
+    opacity: 0;
+    z-index: -1; }
+  61% {
+    left: 5.5em;
+    opacity: 1;
+    z-index: 1; }
+  100% {
+    left: 5.5em;
+    opacity: 1;
+    z-index: 1; } }
+
+@keyframes parisotdev-bottom-line {
+  0% {
+    top: 5em; }
+  30% {
+    top: 8em; }
+  60% {
+    top: 5em; }
+  100% {
+    top: 5em; } }
+
+@keyframes parisotdev-inner-circle {
+  0% {
+    height: 3em;
+    width: 1.5em; }
+  30% {
+    height: 6em;
+    width: 3em; }
+  60% {
+    height: 3em;
+    width: 1.5em; }
+  100% {
+    height: 3em;
+    width: 1.5em; } }
+
+@keyframes parisotdev-outer-circle {
+  0% {
+    height: 5em;
+    width: 2.5em; }
+  30% {
+    height: 8em;
+    width: 4em; }
+  60% {
+    height: 5em;
+    width: 2.5em; }
+  100% {
+    height: 5em;
+    width: 2.5em; } }
+
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -319,4 +606,5 @@ p {
     #main-footer div:nth-child(2) {
       grid-column: 3/5; }
   .parisotdev {
-    padding-bottom: 1em; } }
+    zoom: 0.5;
+    -moz-transform: scale(0.5); } }
